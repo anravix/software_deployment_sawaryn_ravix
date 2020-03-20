@@ -13,9 +13,9 @@ def add_vectors(vector1,vector2):
     Parameters
     ----------
     vector1 : list
-	The first vector.
+	    The first vector.
     vector2 : list
-	The second vector.
+	    The second vector.
 
     Returns
     -------
@@ -35,9 +35,9 @@ def scalar_mult(scalar, vector):
     Parameters
     ----------
     scalar : int
-	The multiplier integer.
+	    The multiplier integer.
     vector : list
-	The vector to multiply.
+	    The vector to multiply.
 
     Returns
     -------
@@ -61,9 +61,9 @@ def dot_product(vec1,vec2):
     Parameters
     ----------
     vec1 : list
-	The first vector.
+	    The first vector.
     vec2 : list
-	The second vector.
+	    The second vector.
 
     Returns
     -------
@@ -82,9 +82,9 @@ def replace(s,old,new):
     Parameters
     ----------
     s : string
-	The string to modify.
+	    The string to modify.
     old : string
-	The pattern to modify in the string.
+	    The pattern to modify in the string.
     new : 
         The new pattern to replace in the string. 
 
@@ -99,8 +99,24 @@ def replace(s,old,new):
     return(glue.join(liste))
 
 
+def nb_occurence(chaine):
+    """ Creation of a dictionnary of letters and occurence from a chaine chaine
 
-def alphabet_chaine(chaine):
+    Note
+    ----
+    The chain can contain upper case.
+
+    Parameters
+    ----------
+    chaine : chain
+        The chain to analyze.
+
+	Returns
+	-------
+	dictionnary
+        The sort dictionnary by alphabetical order of the letters of the chain and their ocurrence in the chain. 
+
+    """
     table={}
     for i in chaine.lower():
         if i not in table :
@@ -109,13 +125,13 @@ def alphabet_chaine(chaine):
             table[i]+=1
     t=list(table.items())
     t.sort()
-    Ordre=[]
+
+    table_trie = {}
     for i in t:
         for j in range(len(i)):
-            print(i[j], end="  ")
-            print("\n")
-            Ordre.append(i[j])
-    return(t)
+            table_trie[i[0]] = i[j]
+
+    return table_trie
 
 """
 Tests unitaires
@@ -137,5 +153,5 @@ print(dot_product([1,1],[1,1]))
 print(dot_product([1,2],[1,4]))
 print(dot_product([1,2,1],[1,4,3]))
 
-chaine = "ThiS is String with Upper and lower case Letters"
-print(alphabet_chaine(chaine))
+print(nb_occurence("ThiS is String with Upper and lower case Letters"))
+
