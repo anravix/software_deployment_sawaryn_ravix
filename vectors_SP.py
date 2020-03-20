@@ -99,22 +99,23 @@ def replace(s,old,new):
     return(glue.join(liste))
 
 
+def nb_occurence(chaine):
+    table={}
+    for i in chaine.lower():
+        if i not in table :
+            table[i]=1
+        else:
+            table[i]+=1
 
-chaine = "ThiS is String with Upper and lower case Letters"
-table={}
-for i in chaine.lower():
-    if i not in table :
-        table[i]=1
-    else:
-        table[i]+=1
+    t=list(table.items())
+    t.sort()
 
-t=list(table.items())
-t.sort()
-for i in t:
-    for j in range(len(i)):
-        print(i[j], end="  ")
-    print("\n")
+    table_trie = {}
+    for i in t:
+        for j in range(len(i)):
+            table_trie[i[0]] = i[j]
 
+    return table_trie
 
 """
 Tests unitaires
@@ -135,3 +136,4 @@ print(add_vectors([1,2,1],[1,4,3]))
 print(dot_product([1,1],[1,1]))
 print(dot_product([1,2],[1,4]))
 print(dot_product([1,2,1],[1,4,3]))
+print(nb_occurence("ThiS is String with Upper and lower case Letters"))
