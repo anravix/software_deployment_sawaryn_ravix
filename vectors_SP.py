@@ -152,6 +152,7 @@ print(add_vectors([1,2,1],[1,4,3]))
 print(dot_product([1,1],[1,1]))
 print(dot_product([1,2],[1,4]))
 print(dot_product([1,2,1],[1,4,3]))
+#CECI EST UN COMMENTAIRE
 
 
 print(nb_occurence("ThiS is String with Upper and lower case Letters"))
