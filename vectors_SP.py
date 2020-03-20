@@ -140,7 +140,7 @@ Tests unitaires
 """
 print(replace("Mississippi","i","I"))
 print(replace("I love spom! Spom is my favorite food. Spom, spom, yum!","om","am"))
-
+ 
 print(scalar_mult(5, [1,2]))
 print(scalar_mult(3, [1,0,-1]))
 print(scalar_mult(7, [3,0,5,11,2]))
