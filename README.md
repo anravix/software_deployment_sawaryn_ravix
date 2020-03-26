@@ -4,6 +4,7 @@
  <img src="logo.jpg" height="250">
 </div>
 
+
 ### Tutorials:
 
 Check the jupyter notebook tutorials located in the __tutorial__ folder
@@ -17,10 +18,10 @@ Check the jupyter notebook tutorials located in the __tutorial__ folder
 
 For bug reports and feedback do not hesitate to contact the authors
 
-+ Anne Ravix: anne.ravix AT insa-lyon.fr
-+ Mélanie Sawaryn: melanie.sawaryn AT insa-lyon.fr
++ Anne Ravix: anne.ravix @ insa-lyon.fr
++ Mélanie Sawaryn: melanie.sawaryn @ insa-lyon.fr
 
 ### Maintainer:
 
-+ Anne Ravix: anne.ravix AT insa-lyon.fr
-+ Mélanie Sawaryn: melanie.sawaryn AT insa-lyon.fr
++ Anne Ravix: anne.ravix @ insa-lyon.fr
++ Mélanie Sawaryn: melanie.sawaryn @ insa-lyon.fr
