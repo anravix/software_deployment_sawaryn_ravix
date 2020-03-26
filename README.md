@@ -14,6 +14,10 @@ Check the jupyter notebook tutorials located in the __tutorial__ folder
 + `tuto_replace` to replace all occurences of a pattern.
 + `tuto_nb_occurence` to create a dictionnary of letters and occurence from a chain.
 
+### TODO:
+
+We went to add some fonctionnality like the gestion of errors if the vector is the wrong type. Furthermore, we want to develop more type of data.
+
 ### Authors:
 
 For bug reports and feedback do not hesitate to contact the authors
