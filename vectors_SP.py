@@ -100,7 +100,7 @@ def replace(s,old,new):
 
 
 def nb_occurence(chaine):
-    """ Creation of a dictionnary of letters and occurence from a chaine chaine
+    """ Creation of a dictionnary of letters and occurence from a chain chaine
 
     Note
     ----
