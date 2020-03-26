@@ -1,5 +1,8 @@
 # software_deployment_sawaryn_ravix
 
+<div style="display: flex; justify-content: center;">
+ <img src="logo.jpg" height="250">
+</div>
 
 ### Tutorials:
 
