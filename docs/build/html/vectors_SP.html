@@ -31,8 +31,171 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="vectors-sp-module">
-<h1>vectors_SP module<a class="headerlink" href="#vectors-sp-module" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="module-vectors_SP">
+<span id="vectors-sp-module"></span><h1>vectors_SP module<a class="headerlink" href="#module-vectors_SP" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="vectors_SP.add_vectors">
+<code class="sig-prename descclassname">vectors_SP.</code><code class="sig-name descname">add_vectors</code><span class="sig-paren">(</span><em class="sig-param">vector1</em>, <em class="sig-param">vector2</em><span class="sig-paren">)</span><a class="headerlink" href="#vectors_SP.add_vectors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creation of a vector by the addition of two others.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The two vectors must have the same dimension.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>vector1</strong> (<em>list</em>) – The first vector.</p></li>
+<li><p><strong>vector2</strong> (<em>list</em>) – The second vector.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Sum of the corresponding  elements of each list.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">add_vectors</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
+<span class="go">[2, 4, 8]</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">add_vectors</span><span class="p">([</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="go">[-1, 10, 10, 2, 10]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="vectors_SP.dot_product">
+<code class="sig-prename descclassname">vectors_SP.</code><code class="sig-name descname">dot_product</code><span class="sig-paren">(</span><em class="sig-param">vec1</em>, <em class="sig-param">vec2</em><span class="sig-paren">)</span><a class="headerlink" href="#vectors_SP.dot_product" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computation of dot product.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The two vectors must have the same dimension.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>vec1</strong> (<em>list</em>) – The first vector.</p></li>
+<li><p><strong>vec2</strong> (<em>list</em>) – The second vector.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The sum of the products of the corresponding elements of each.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dot_product</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span>
+<span class="go">2</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dot_product</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">])</span>
+<span class="go">9</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dot_product</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
+<span class="go">12</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="vectors_SP.nb_occurence">
+<code class="sig-prename descclassname">vectors_SP.</code><code class="sig-name descname">nb_occurence</code><span class="sig-paren">(</span><em class="sig-param">chaine</em><span class="sig-paren">)</span><a class="headerlink" href="#vectors_SP.nb_occurence" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creation of a dictionnary of letters and occurence from a chain chaine</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The chain can contain upper case.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>chaine</strong> (<em>chain</em>) – <p>The chain to analyze.</p>
+<dl class="field-list simple">
+<dt class="field-odd">returns</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><em>dictionnary</em></p></li>
+<li><p><em>The sort dictionnary by alphabetical order of the letters of the chain and their ocurrence in the chain.</em></p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">nb_occurence</span><span class="p">(</span><span class="s2">&quot;ThiS is String with Upper and lower case Letters&quot;</span><span class="p">)</span>
+<span class="go">{&#39; &#39;: 8, &#39;a&#39;: 2, &#39;c&#39;: 1, &#39;d&#39;: 1, &#39;e&#39;: 5, &#39;g&#39;: 1, &#39;h&#39;: 2, &#39;i&#39;: 4, &#39;l&#39;: 2, &#39;n&#39;: 2, &#39;o&#39;: 1,</span>
+<span class="go">&#39;p&#39;: 2, &#39;r&#39;: 4, &#39;s&#39;: 5, &#39;t&#39;: 5, &#39;u&#39;: 1, &#39;w&#39;: 2}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="vectors_SP.replace">
+<code class="sig-prename descclassname">vectors_SP.</code><code class="sig-name descname">replace</code><span class="sig-paren">(</span><em class="sig-param">s</em>, <em class="sig-param">old</em>, <em class="sig-param">new</em><span class="sig-paren">)</span><a class="headerlink" href="#vectors_SP.replace" title="Permalink to this definition">¶</a></dt>
+<dd><p>Replace all occurences of old with new in the string s.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>s</strong> (<em>string</em>) – The string to modify.</p></li>
+<li><p><strong>old</strong> (<em>string</em>) – The pattern to modify in the string.</p></li>
+<li><p><strong>new</strong> – The new pattern to replace in the string.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The modified list on each pattern.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;Mississippi&quot;</span><span class="p">,</span><span class="s2">&quot;i&quot;</span><span class="p">,</span><span class="s2">&quot;I&quot;</span><span class="p">)</span>
+<span class="go">MIssIssIppI</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;I love spom! Spom is my favorite food. Spom, spom, yum!&quot;</span><span class="p">,</span><span class="s2">&quot;om&quot;</span><span class="p">,</span><span class="s2">&quot;am&quot;</span><span class="p">)</span>
+<span class="go">I love spam! Spam is my favorite food. Spam, spam, yum!</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="vectors_SP.scalar_mult">
+<code class="sig-prename descclassname">vectors_SP.</code><code class="sig-name descname">scalar_mult</code><span class="sig-paren">(</span><em class="sig-param">scalar</em>, <em class="sig-param">vector</em><span class="sig-paren">)</span><a class="headerlink" href="#vectors_SP.scalar_mult" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creation of a vector by the multiplication of a vector by a scalar.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>scalar</strong> (<em>int</em>) – The multiplier integer.</p></li>
+<li><p><strong>vector</strong> (<em>list</em>) – The vector to multiply.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The multiplication of the corresponding  elements of the list by a scalar.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">scalar_mult</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">])</span>
+<span class="go">[5, 10]</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">scalar_mult</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+<span class="go">[3, 0, -3]</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">scalar_mult</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">2</span><span class="p">])</span>
+<span class="go">[21, 0, 35, 77, 14]</span>
+</pre></div>
+</div>
+</dd></dl>
+
 </div>
 
 

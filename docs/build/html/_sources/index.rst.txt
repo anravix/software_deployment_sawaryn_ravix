@@ -10,8 +10,9 @@ Welcome to Vectors_SP's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   modules.rst 
+   modules.rst
    vectors_SP.rst
+
 
 Indices and tables
 ==================
