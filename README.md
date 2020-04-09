@@ -5,7 +5,10 @@
 </div>
 
 ### IMPORTATION
-No need of importations.
+To install our package:
+python3 -m pip install --index-url https://test.pypi.org/simple/ --no-deps "Vectors_SP-MelanieSawaryn-AnneRavix"
+
+No needs of other package linked.
 
 ### Tutorials:
 
