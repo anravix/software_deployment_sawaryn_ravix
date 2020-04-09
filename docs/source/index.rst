@@ -8,7 +8,7 @@ Welcome to Vectors_SP's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption:
 
    modules.rst
    vectors_SP.rst
