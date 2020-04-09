@@ -1,6 +1,13 @@
-FROM python:3
+FROM ubuntu
+
+RUN apt-get update && apt-get install -y python-pip
+
+RUN pip install --upgrade setuptools
+
+RUN pip install numpy
+
 WORKDIR /docker_build
-COPY ../Vectors_SP.py  docker_build/Vectors_SP.py
-python3 -m pip install --index-url https://test.pypi.org/simple/ --no-deps "Vectors_SP-MelanieSawaryn-AnneRavix"
-ADD test.py /
+COPY test.py  docker_build/test.py
+RUN  pip install -i https://test.pypi.org/simple/ Vectors-SP-MelanieSawaryn-AnneRavix==0.0.3
+
 CMD ["python", "../test.py"]

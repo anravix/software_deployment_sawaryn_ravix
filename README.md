@@ -8,6 +8,8 @@
 To install our package:
 python3 -m pip install --index-url https://test.pypi.org/simple/ --no-deps "Vectors_SP-MelanieSawaryn-AnneRavix"
 
+pip install -i https://test.pypi.org/simple/ Vectors-SP-MelanieSawaryn-AnneRavix==0.0.3
+
 No needs of other package linked.
 
 ### Tutorials:
@@ -25,6 +27,8 @@ https://vectors-sp.readthedocs.io/en/latest/
 ### TODO:
 
 We went to add some fonctionnality like the gestion of errors if the vector is the wrong type. Furthermore, we want to develop more type of data.
+
+Problem in the Dockerfile 
 
 ### Authors:
 
