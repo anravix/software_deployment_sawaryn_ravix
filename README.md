@@ -12,6 +12,8 @@ pip install -i https://test.pypi.org/simple/ Vectors-SP-MelanieSawaryn-AnneRavix
 
 No needs of other package linked.
 
+You can also use the Docker image : docker pull maniesaw/vectors_sp:latest
+
 ### Tutorials:
 
 Check the jupyter notebook tutorials located in the __tutorial__ folder
